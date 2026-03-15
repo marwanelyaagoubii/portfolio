@@ -198,7 +198,7 @@ h2 {
 .photo-apropos {
     width: 250px;
     height: 300px;
-    background-image: url('./images/perso.jpg');
+    background-image: url('./images/pp.avif'); 
     background-size: cover;
     background-position: center 2px;
     border: 2px solid #000;
