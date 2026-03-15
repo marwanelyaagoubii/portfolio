@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="photo-cercle"></div>
+        <div class="logo">Marwan <br>El yaagoubi</div>
+        <ul class="nav-liens">
+            <li><a href="#accueil"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="#apropos"><i class="fas fa-user"></i> À Propos</a></li>
+            <li><a href="#parcours"><i class="fas fa-home"></i> Parcours</a></li>
+            <li><a href="#bts"><i class="fa-sharp fa-solid fa-school"></i> BTS SIO </a></li>
+            <li><a href="#competences"><i class="fas fa-code"></i> Compétences</a></li>
+            <li><a href="#projets"><i class="fas fa-project-diagram"></i> Projets</a></li>
+            <li><a href="#certifications"><i class="fa fa-certificate"></i>Certifications</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="epreuveE4.html" target="_blank"><i class="fas fa-file-alt"></i> Épreuve E4</a></li>
+            <li><a href="veille.html" target="_blank"><i class="fas fa-project-diagram"></i> Veille technologique</a></li>
+        </ul>
+    </nav>
+
+    <div class="responsive">
+        <div class="ligne1"></div>
+        <div class="ligne2"></div>
+        <div class="ligne3"></div>
+    </div>
+
+    <section id="accueil" class="fond">
+        <div class="fond-titre">
+            <h1> Marwan El yaagoubi</h1>
+            <p class="sous-titre">Étudiant en BTS SIO - Option SLAM</p>
+            <a href="#contact" target="_blank" class="bouton-contact">Me Contacter</a>
+        </div>
+    </section>
+
+    <section id="apropos" class="about">
+        <h2>À Propos de Moi 👤 </h2>
+        <div class="contenu-about">
+            <div class="photo-apropos"></div>
+            <div class="text-about">
+                <h2>Présentation</h2><br>
+                <p>Bonjour je suis <span class="neon-text">Marwan El Yaagoubi</span> !</p><br>Diplômé d’un
+                <span class="neon-text">BTS SIO</span> (Services Informatiques aux Organisations), option
+                <span class="neon-text">SLAM</span> (Solutions Logiciel Applications des Métiers), obtenu au Lycée Théodore Aubanel à Avignon, je me spécialise dans le développement d’applications et les solutions logicielles.<br>
+                <br>
+                <p>Passionné par l’informatique et les nouvelles technologies, j’ai développé au cours de ma formation des compétences en conception, développement et maintenance d’applications.</p><br>
+                <p>Curieux, rigoureux et motivé, je souhaite continuer à développer mes compétences et contribuer à des projets informatiques innovants. <span class="neon-text"></span></p>
+                <a href="./images/cv (1).pdf" target="_blank" class="bouton-cv">Télécharger le CV</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="parcours" class="education">
+        <h2>Mon Parcours 👨🏻‍🎓​</h2>
+        <h4>Voici mon cursus scolaire.</h4>
+        <div class="container education">
+            <div class="card">
+                <div class="carte-contenu-parcours">
+                    <div class="contenu-gauche">
+                        <div class="icon">🎓</div>
+                        <h2>BTS SIO</h2>
+                    </div>
+                    <div class="contenu-droite">
+                        <p class="lieu">Théodore Aubanel</p>
+                        <p class="bordure-date">2023-2025</p>
+                        <div class="details">
+                            <p class="gris">BTS Services informatiques aux organisations Option Solutions Logicielles et Applications Métiers</p>
+                            <p class="gras">Pour ma future orientation professionnelle, je me suis orienté vers un BTS SIO afin d'approfondir mes connaissances et mes compétences en développement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="carte-contenu-parcours">
+                    <div class="contenu-gauche">
+                        <div class="icon">📚</div>
+                        <h2>Lycée</h2>
+                    </div>
+                    <div class="contenu-droite">
+                        <p class="lieu">Théodore Aubanel</p>
+                        <p class="bordure-date">2020 - 2023</p>
+                        <div class="details">
+                            <p class="gris">Baccalauréat sciences et technologies du management et de la gestion</p>
+                            <p class="gras">Après ma seconde générale, je me suis orienté vers la filière STMG et j'ai obtenu mon BAC STMG.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="carte-contenu-parcours">
+                    <div class="left-content">
+                        <div class="icon">🏫</div>
+                        <h2>Collège</h2>
+                    </div>
+                    <div class="contenu-droite">
+                        <p class="lieu">Denis Diderot</p>
+                        <p class="bordure-date">2016 - 2019</p>
+                        <div class="details">
+                            <p class="gris">Brevet des collèges</p>
+                            <p class="gras">Après avoir passé ma 6ème à ma 3ème, j'ai finalement obtenu mon brevet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h4 class="interet">Voici mes centres d'intérets.</h4>
+        </div>
+        <div class="container interests">
+            <div class="card interest-card">
+                <div class="carte-contenu-parcours">
+                    <div class="left-content">
+                        <div class="icon">🎵</div>
+                        <h2>Musique</h2>
+                    </div>
+                    <div class="contenu-droite">
+                        <div class="details">
+                            <p class="bordure-date">Tous les jours</p>
+                            <p class="gras">Rien de tel que de combiner divertissement et apprentissage ! Cela m'aide à améliorer mes compétences linguistiques, en particulier en anglais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card interest-card">
+                <div class="carte-contenu-parcours">
+                    <div class="left-content">
+                        <div class="icon">📖</div>
+                        <h2>Lecture</h2>
+                    </div>
+                    <div class="contenu-droite">
+                        <div class="details">
+                            <p class="bordure-date">Quotidiennement</p>
+                            <p class="gras">La lecture me permet d'apprendre de nouvelles choses, d'explorer d'autres univers et d'enrichir mon vocabulaire. C'est un excellent moyen de développer mon esprit et ma compréhension du monde.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card interest-card">
+                <div class="carte-contenu-parcours">
+                    <div class="left-content">
+                        <div class="icon">🎬</div>
+                        <h2>Séries & Films VO</h2>
+                    </div>
+                    <div class="contenu-droite">
+                        <div class="details">
+                            <p class="bordure-date">Quotidiennement</p>
+                            <p class="gras">Regarder des films et des séries en version originale m'aide à améliorer mes compétences linguistiques, surtout en anglais. Cela me permet aussi de mieux comprendre les accents, les expressions et la culture des pays anglophones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bts" class="bts">
+        <h2>Qu'est ce que le BTS SIO ? 🏫​</h2>
+        <h4 class="encore">Le Brevet de Technicien Supérieur Service Informatique aux Organisations (BTS SIO) est un programme de niveau Bac+2, qui forme des informaticiens aussi bien doués pour le développement que pour l’administration et la maintenance d’un réseau informatique.
+            <br>Le BTS Services Informatiques aux Organisations propose 2 options :</h4>
+        <div class="options-conteneurs">
+            <div class="option-carte-bts">
+                <div class="option-carte-dedans">
+                    <div class="option-carte-devant">
+                        <i class="fas fa-code option-icon"></i>
+                        <h3 class="option-titree">Option SLAM</h3>
+                        <p class="option-soustitre">Solutions Logicielles et Applications Métiers</p>
+                        <span class="detail-bts">(Survolez pour en savoir plus)</span>
+                    </div>
+                    <div class="option-carte-derriere">
+                        <h3 class="option-titree">SLAM</h3>
+                        <p>L’option Solutions logicielles et applications métiers forme des spécialistes des logiciels (rédaction d’un cahier des charges, formulation des besoins et spécifications, développement d’applications,intégration au sein de la société).
+                            <br>Les techniciens supérieurs en informatique option SLAM peuvent accéder aux métiers de : </p><br>
+                        </p>
+                        <ul class="option-list">
+                            <li>Développeur d’applications informatiques</li>
+                            <li>Développeur informatique</li>
+                            <li>Analyste d’applications ou d’études</li>
+                            <li>Analyste programmeur</li>
+                            <li>Programmeur analyste</li>
+                            <li>Programmeur d’applications</li>
+                            <li>Intégrateur web</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="option-carte-bts">
+                <div class="option-carte-dedans">
+                    <div class="option-carte-devant">
+                        <i class="fas fa-network-wired option-icon"></i>
+                        <h3 class="option-titree">Option SISR</h3>
+                        <p class="option-soustitre">Solutions d'Infrastructure, Systèmes et Réseaux</p>
+                        <span class="detail-bts">(Survolez pour en savoir plus)</span>
+                    </div>
+                    <div class="option-carte-derriere">
+                        <h3 class="option-titree">SISR</h3>
+                        <p>L’option Solutions d’infrastructure, systèmes et réseaux forme des professionnels des réseaux et équipements informatiques (installation, maintenance, sécurité).<br> Ces derniers sont en mesure de répondre aux besoins informatiques
+                            d’une entreprise, tout en accompagnant la transformation numérique.<br>Les techniciens supérieurs en informatique option SISR peuvent accéder aux métiers de : </p><br>
+                        <ul class="option-list">
+                            <li>Administration des systèmes et réseaux</li>
+                            <li>Informaticien support et déploiement</li>
+                            <li>Pilote d’exploitation</li>
+                            <li>Technicien d’infrastructure</li>
+                            <li>Technicien de production</li>
+                            <li>Technicien micro et réseaux</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="competences" class="skills">
+        <h2 class="comp">Mes Compétences ​👨🏻‍💻​</h2>
+        <h4 class="info">Voici les différents langages de programmations et les différents outils que j'ai pu rencontrer et pratiquer lors de ma formation, j'ai appris à la fois grâce à ma formation académique au BTS SIO et par mes propres recherches, nourries par ma
+            curiosité et ma passion pour le développement.</h4>
+        <div class="tech-cards">
+            <div class="tech-card html">
+                <div class="tech-image">
+                    <img src="./images/html5.webp" alt="HTML5">
+                </div>
+                <div class="tech-info">
+                    <h3 class="tech-nom">HTML5</h3>
+                </div>
+            </div>
+            <div class="tech-card css">
+                <div class="tech-image">
+                    <img src="./images/CSS3.webp" alt="CSS3">
+                </div>
+                <div class="tech-info">
+                    <h3 class="tech-nom">CSS3</h3>
+                </div>
+            </div>
+            <div class="tech-card php">
+                <div class="tech-image">
+                    <img src="./images/php.png" alt="PHP8">
+                </div>
+                <div class="tech-info">
+                    <h3 class="tech-nom">PHP8</h3>
+                </div>
+            </div>
+            <div class="tech-card python">
+                <div class="tech-image">
+                    <img src="./images/python.jpg" alt="Python">
+                </div>
+                <div class="tech-info">
+                    <h3 class="tech-nom">Python</h3>
+                </div>
+            </div>
+            <div class="tech-card sqlite">
+                <div class="tech-image">
+                    <img src="./images/sql.webp" alt="SQLite">
+                </div>
+                <div class="tech-info">
+                    <h3 class="tech-nom">SQLite</h3>
+                </div>
+            </div>
+            <div class="tech-card javascript">
+                <div class="tech-image">
+                    <img src="./images/js.jpg" alt="JavaScript">
+                </div>
+                <div class="tech-info">
+                    <h3 class="tech-nom">JavaScript</h3>
+                </div>
+            </div>
+            <div class="tech-card github">
+                <div class="tech-image">
+                    <img src="./images/java.png" alt="GitHub">
+                </div>
+                <div class="tech-info">
+                    <h3 class="tech-nom">Java</h3>
+                </div>
+            </div>
+            <div class="tech-card flutter">
+                <div class="tech-image">
+                    <img src="./images/flutter.jpg" alt="Flutter">
+                </div>
+                <div class="tech-info">
+                    <h3 class="tech-nom">Flutter</h3>
+                </div>
+            </div>
+            <div class="tech-card vscode">
+                <div class="tech-image">
+                    <img src="./images/vs.png" alt="Visual Studio Code">
+                </div>
+                <div class="tech-info">
+                    <h3 class="tech-nom">VS Code</h3>
+                </div>
+            </div>
+            <div class="tech-card vegas">
+                <div class="tech-image">
+                    <img src="./images/sony vegas.webp" alt="Sony Vegas">
+                </div>
+                <div class="tech-info">
+                    <h3 class="tech-nom">Sony Vegas</h3>
+                </div>
+            </div>
+            <div class="tech-card photoshop">
+                <div class="tech-image">
+                    <img src="./images/photo shop.png" alt="Adobe Photoshop">
+                </div>
+                <div class="tech-info">
+                    <h3 class="tech-nom">Photoshop</h3>
+                </div>
+            </div>
+            <div class="tech-card github">
+                <div class="tech-image">
+                    <img src="./images/git.png" alt="GitHub">
+                </div>
+                <div class="tech-info">
+                    <h3 class="tech-nom">GitHub</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="projets" class="section-containerdeux">
+        <h2 class="deux">Projet entreprise / Expérience professionnelle ✍️</h2>
+        <div class="experience-containerdeux">
+            <div class="experiencedeux">
+                <h3 class="deux">Stage 1 – Développement du site ClefCar</h3>
+                <p class="deux">Lors de mon premier stage chez ClefCar, j’ai été chargé de concevoir et développer un site internet permettant aux clients de sélectionner leur modèle de voiture et d’obtenir un devis en ligne.</p>
+                <ul class="deux">
+                    <li>🚀 <strong>Missions principales :</strong>
+                        <ul>
+                            <li>Création d’un site interactif.</li>
+                            <li>Développement de l’interface utilisateur.</li>
+                            <li>Intégration d’un formulaire de contact et d’un module de prise de commande.</li>
+                            <li>Travail en autonomie en télétravail avec suivi régulier.</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>🔎 <strong>Compétences développées :</strong>
+                        <ul>
+                            <li>Développement web (HTML, CSS, JavaScript, PHP,Twig).</li>
+                            <li>Gestion de base de données.</li>
+                            <li>Adaptation aux besoins d’une entreprise sans locaux physiques.</li>
+                            <li><strong>A3.2</strong>: Développer la présence en ligne de l'organisation. ✔️</li>
+                            <li><strong>A4.1.2</strong>: Travailler en mode projet. ✔️</li>
+                            <li><strong>A4.2.2</strong>: Mettre à disposition un service informatique. ✔️</li>
+                            <li><strong>A2.3.2</strong>: Répondre aux demandes d’assistance. ✔️</li>
+                            <li><strong>A5.1.1</strong>: Organiser son développement professionnel. ✔️</li>
+                        </ul>
+                    </li>
+                    <br>
+                </ul>
+                <a href="https://testlol.42web.io/" class="btndeux" target="_blank">Voir le site</a>
+                <a href="./images/Rapport de stage BTS SIO 1.pdf" class="btndeux" target="_blank">Rapport de stage</a>
+            </div>
+
+            <div class="experiencedeux">
+                <h3 class="deux">Stage 2 – Développement du site ELYTransport</h3>
+                <p class="deux">Développement d’un site internet pour ELYTransport afin de présenter leurs services et faciliter la gestion des demandes de transport.</p>
+                <ul class="deux">
+                    <li>🚀 <strong>Missions principales :</strong>
+                        <ul>
+                            <li>Conception d’un site vitrine.</li>
+                            <li>Développement d’un formulaire de demande de devis.</li>
+                            <li>Optimisation du site pour le référencement.</li>
+                            <li>Collaboration à distance avec l’entreprise.</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>🔎 <strong>Compétences développées :</strong>
+                        <ul>
+                            <li>Création d’un site web responsive (HTML, CSS, JavaScript, PHP,Twig).</li>
+                            <li>Design pour une meilleure expérience utilisateur.</li>
+                            <li>Gestion de projet en autonomie.</li>
+                            <li><strong>A3.2</strong>: Développer la présence en ligne de l'organisation. ✔️</li>
+                            <li><strong>A4.1.2</strong>: Travailler en mode projet. ✔️</li>
+                            <li><strong>A4.2.2</strong>: Mettre à disposition un service informatique. ✔️</li>
+                            <li><strong>A2.3.2</strong>: Répondre aux demandes d’assistance. ✔️</li>
+                            <li><strong>A5.1.1</strong>: Organiser son développement professionnel. ✔️</li>
+                        </ul>
+                    </li>
+                    <br>
+                </ul>
+                <a href="https://elytransport.free.nf/" class="btndeux" target="_blank">Voir le site</a>
+                <a href="./images/Rapport de stage BTS SIO 2.pdf" class="btndeux" target="_blank">Rapport de stage</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-containerdeux">
+        <h2 class="deux">Projet d'étude ✍️</h2>
+        <div class="project-containerdeux">
+            <div class="projectdeux">
+                <h3 class="deux">Projet 1 – Développement du site e-commerce GameVault</h3>
+                <p class="deux">Développement d’un site e-commerce spécialisé dans la vente de jeux vidéo avec intégration de fonctionnalités essentielles.</p>
+                <ul class="deux">
+                    <li>🚀 <strong>Missions principales :</strong>
+                        <ul>
+                            <li>Développement en PHP 8 avec gestion dynamique des produits.</li>
+                            <li>Création d’un système de panier et de paiement sécurisé.</li>
+                            <li>Interface utilisateur moderne et responsive.</li>
+                            <li>Gestion d’une base de données.</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>🔎 <strong>Compétences développées :</strong>
+                        <ul>
+                            <li>Programmation en PHP 8 et MySQL.</li>
+                            <li>Développement sécurisé et ergonomique.</li>
+                            <li>Gestion des sessions et utilisateurs.</li>
+                        </ul>
+                    </li>
+                    <br>
+                </ul>
+                <a href="./images/gamevault1.PNG" target="_blank" class="btndeux">Voir le projet</a>
+            </div>
+
+            <div class="projectdeux">
+                <h3 class="deux">Projet 2 – Développement d’une application mobile avec Flutter</h3>
+                <p class="deux">Développement d’une application mobile pour administrateurs permettant la gestion des commandes, utilisateurs et produits.</p>
+                <ul class="deux">
+                    <li>🚀 <strong>Missions principales :</strong>
+                        <ul>
+                            <li>Développement de l’application en Flutter.</li>
+                            <li>Création d’une interface intuitive.</li>
+                            <li>Intégration d’une base de données en temps réel.</li>
+                            <li>Implémentation d’un système d’authentification sécurisé.</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>🔎 <strong>Compétences développées :</strong>
+                        <ul>
+                            <li>Programmation mobile avec Flutter & Dart.</li>
+                            <li>Synchronisation des données en temps réel.</li>
+                            <li>Conception d’une interface ergonomique.</li>
+                        </ul>
+                    </li>
+                    <br>
+                </ul>
+                <a href="./images/android1.PNG" target="_blank" class="btndeux">Voir le projet</a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+
+
+    <section class="skills-containerdeux">
+        <h2 class="deux">Compétences acquises</h2>
+        <div class="skills-griddeux">
+            <div class="skill-boxdeux">
+                <span class="skill-checkdeux">✅</span>
+                <p class="deux">Développement Front-end</p>
+            </div>
+            <div class="skill-boxdeux">
+                <span class="skill-checkdeux">✅</span>
+                <p class="deux">Développement Back-end</p>
+            </div>
+            <div class="skill-boxdeux">
+                <span class="skill-checkdeux">✅</span>
+                <p class="deux">Gestion de projet</p>
+            </div>
+            <div class="skill-boxdeux">
+                <span class="skill-checkdeux">✅</span>
+                <p class="deux">Design</p>
+            </div>
+            <div class="skill-boxdeux">
+                <span class="skill-checkdeux">✅</span>
+                <p class="deux">Travail en autonomie</p>
+            </div>
+            <div class="skill-boxdeux">
+                <span class="skill-checkdeux">✅</span>
+                <p class="deux">Gestion de BDD</p>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script type="module" src="/main.js"></script>
+    </section>
+
+    <section id="certifications" class="certifications">
+        <h2 class="comp">Mes Certifications 📜</h2>
+        <h4 class="info">Découvrez mes certifications et diplômes obtenus au cours de ma formation.</h4>
+        <div class="certification-cards">
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Certification PIX</h3>
+                    <p> la gestion des données, la communication numérique, la sécurité informatique : 10 mars 2023</p>
+                    <a href="./images/certification-pix-20230313.pdf" class="certification-link" target="_blank">
+                        <i class="fas fa-file-pdf"></i> Voir le diplôme
+                    </a>
+                </div>
+            </div>
+
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Certification PIX</h3>
+                    <p> la gestion des données, la communication numérique, la sécurité informatique : 21 janvier 2025</p>
+                    <a href="./images/certification-pix-20250124.pdf" class="certification-link" target="_blank">
+                        <i class="fas fa-file-pdf"></i> Voir la certification
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <h2>Me Contacter 📱​</h2>
+        <div class="carte-contact">
+            <div class="contact-style">
+                <div class="forme-section">
+                    <h2 class="titre-contact">Contactez-moi</h2>
+                    <form class="contact-forme">
+                        <div class="forme-groupe">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Votre email">
+                        </div>
+                        <div class="forme-groupe">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Sujet de votre message">
+                        </div>
+                        <div class="forme-groupe">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required placeholder="Votre message"></textarea>
+                        </div>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+                <div class="info-section">
+                    <div class="info-carte-contact">
+                        <h3>Mes Informations</h3>
+                        <div class="info-details">
+                            <div class="info-item">
+                                <i class="icon-contact">📧</i>
+                                <p>marwan.elyaagoubi2@gmail.com</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="icon-contact">📱</i>
+                                <p>+33 6 68 08 69 49</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="icon-contact">📍</i>
+                                <p>Avignon, France</p>
+                            </div>
+                        </div>
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Initialisation de la carte avec une vue centrée sur Avignon
+            const map = L.map('map').setView([43.9504, 4.8065], 16); // Coordonnées précises pour l'adresse du lycée
+
+            // Ajout de la couche de tuiles OpenStreetMap
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Ajout d'un marqueur pour le lycée Théodore Aubanel à l'adresse précise
+            L.marker([43.9504, 4.8065]).addTo(map) // Coordonnées exactes pour l'adresse
+                .bindPopup('Lycée Théodore Aubanel<br>14 Rue Palapharnerie, 84025 Avignon')
+                .openPopup();
+        </script>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+    </script>
+
+
+</body>
+
+</html>

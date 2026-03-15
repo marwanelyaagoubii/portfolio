@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Épreuve E4 - BTS SIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="photo-cercle"></div>
+        <div class="logo">Marwan <br>El yaagoubi</div>
+        <ul class="nav-liens">
+            <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="index.html"><i class="fas fa-user"></i> À Propos</a></li>
+            <li><a href="index.html"><i class="fas fa-home"></i> Parcours</a></li>
+            <li><a href="index.html"><i class="fa-sharp fa-solid fa-school"></i> BTS SIO </a></li>
+            <li><a href="index.html"><i class="fas fa-code"></i> Compétences</a></li>
+            <li><a href="index.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
+            <li><a href="index.html"><i class="fa fa-certificate"></i>Certifications</a></li>
+            <li><a href="index.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="epreuveE4.html" target="_blank"><i class="fas fa-file-alt"></i> Épreuve E4</a></li>
+            <li><a href="veille.html" target="_blank"><i class="fas fa-project-diagram"></i> Veille technologique</a></li>
+        </ul>
+    </nav>
+
+    <div id="app">
+        <header>
+            <h1>Épreuve E4 - BTS SIO</h1>
+            <div class="presentation">
+                <p>L'épreuve E4 du BTS SIO (Services Informatiques aux Organisations) est une épreuve professionnelle qui porte sur la conception et la maintenance de solutions informatiques. Elle évalue les compétences du candidat à analyser un cahier des
+                    charges, concevoir une solution technique, la mettre en œuvre et assurer sa maintenance.</p>
+                <p>Cette épreuve se déroule sous forme d'un dossier professionnel présentant les situations professionnelles rencontrées pendant le stage ou l'alternance, suivi d'une soutenance orale devant un jury.</p>
+            </div>
+        </header>
+
+        <section class="main-content">
+            <h2 class="section-title">Tableau des compétences évaluées</h2>
+
+            <div class="competences-container">
+                <iframe src="./images/Annexe-6-1-Tableau-de-synthese-Epreuve-E4-BTS-SIO-2022.pdf" width="100%" height="600px"></iframe>
+            </div>
+
+            <div class="documents-section">
+                <h3>Documents et ressources</h3>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Sélectionner un document</button>
+                    <div class="dropdown-content">
+                        <a href="javascript:void(0);" onclick="afficherImages(['images/bart.PNG', 'images/bart1.PNG'])">Exercice du tp-générateur de bart avec php8</a>
+                        <a href="javascript:void(0);" onclick="afficherImages(['images/canva.PNG', 'images/canva1.PNG'])">Création de drapeaux Canva avec JAVASCRIPT</a>
+                        <a href="javascript:void(0);" onclick="afficherImages(['images/rencontre1.PNG', 'images/rencontre2.PNG', 'images/rencontre3.PNG'])">Création d’un site de rencontres avec HTML/CSS</a>
+                        <a href="http://portfoliomee.free.nf/veille.html">Elaboration d’une veille technologique sur la Robotique et les matériels robotisées</a>
+                        <a href="javascript:void(0);" onclick="afficherImages(['images/bdd.PNG', 'images/bdd1.PNG', 'images/bdd2.PNG'])">Création et entretien d’une base de donnée « employé » avec PHPMYADMIN</a>
+                        <a href="javascript:void(0);" onclick="afficherImages(['images/monopoly1.PNG', 'images/monopoly2.PNG', 'images/monopoly3.PNG'])">Création d’un jeux Monopoly avec Python</a>
+                        <a href="javascript:void(0);" onclick="afficherImages(['images/android1.PNG', 'images/android2.PNG'])">Création d’un application mobile Android en tant qu’administrateur avec FLUTTER et DART</a>
+                        <a href="javascript:void(0);" onclick="afficherImages(['images/gamevault1.PNG', 'images/gamevault3.PNG', 'images/gamevault2.PNG'])">Création d ‘un site e-commerce « gamevault » en PHP8</a>
+                    </div>
+                </div>
+
+                <!-- Conteneur des images -->
+                <div class="image-container" id="imageContainer">
+                    <img id="imageToDisplay" src="">
+                    <img id="secondImageToDisplay" src="">
+                    <img id="thirdImageToDisplay" src="">
+                </div>
+            </div>
+
+            <script>
+                function afficherImages(imageUrls) {
+                    var container = document.getElementById('imageContainer');
+
+                    // Tableau d'ID pour les images à afficher
+                    var imageIds = ['imageToDisplay', 'secondImageToDisplay', 'thirdImageToDisplay'];
+
+                    // Pour chaque image dans l'array imageUrls, changer la source de l'image correspondante
+                    imageUrls.forEach(function(imageUrl, index) {
+                        var imageElement = document.getElementById(imageIds[index]);
+                        if (imageElement) {
+                            imageElement.src = imageUrl;
+                        }
+                    });
+
+                    // Afficher le conteneur avec les images
+                    container.style.display = 'block';
+                }
+            </script>
+
+
+        </section>
+
+        <div class="container-pr">
+            <h1>Documents Annexes</h1>
+
+            <div class="document">
+                <div class="document-title">Attestation de stage n°1 (2024)</div>
+                <a href="./images/Attestation de stage CLEFCAR.pdf" target="_blank" class="view-btn">Ouvrez le document</a>
+            </div>
+
+            <div class="document">
+                <div class="document-title">Attestation de stage n°2 (2025)</div>
+                <a href="./images/attestaion de fin de stage ELY TRANSPORT.pdf" target="_blank" class="view-btn">Ouvrez le document</a>
+            </div>
+        </div>
+</body>
+
+</html>
